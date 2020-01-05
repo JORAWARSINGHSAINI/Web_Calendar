@@ -16,7 +16,7 @@ body{
 #calendar{
     background-color:aliceblue;
     position: relative;
-     margin-left: 350px;
+     margin-left: 20%;
         width: 800px;
         height: 500px;
         border: 1px solid black;
@@ -24,7 +24,7 @@ body{
 }
 
 #time{
-
+    box-sizing: border-box;
     width: 50%;
     height: 20%;
     box-sizing: border-box;
@@ -58,6 +58,8 @@ body{
 .day{
     width: 26px;
     height: 28px;
+    box-sizing: border-box;
+    padding-top: 1px;
     margin-right: 26px;
     margin-bottom: 25px;
     border-radius: 50%;
@@ -97,8 +99,13 @@ body{
     color: white;
     background-color: orange;
 }
-.event:hover{
+.day:hover{
     cursor: pointer;
+    background-color: skyblue;
+    font-weight: bold;
+}
+.event:hover{
+    background-color: darkorange;
 }
 #photo{
     width:50%;
@@ -109,3 +116,129 @@ body{
     right: 0;
     background-image: url(images.jpg);
 }
+@media screen and (max-width:1100px){
+    #calendar{
+        width:80%;
+        margin-left: 80px;
+       
+    }
+}
+@media screen and (max-width:1050px){
+    #text{
+        margin-left: 10px;
+    }
+    #calendar{
+        widht:90%;
+        margin-left: 120px;
+    }
+    #time{
+        font-size: 20px;
+         padding-top: 30px;
+    }
+    #photo{
+        width: 47%;
+    }
+    #date{
+        width: 53%;
+    }
+    #week{
+        margin-right: 8%;
+    }
+    #red{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:982px){
+    #text{
+        margin-left: 10px;
+    }
+    #calendar{
+        widht:60%;
+        margin-left: 70px;
+    }
+        #time{
+        font-size: 20px;
+        padding-top: 30px;
+    }
+    #photo{
+        width: 45%;
+    }
+    #date{
+        width: 55%;
+    }
+    #week{
+        letter-spacing: 16px;
+    }
+    .day{
+        margin-right: 24px;
+    }
+    .day:nth-child(1){
+        margin-right: 22px;
+    }
+    .day:nth-child(2){
+        margin-right: 22px;
+    }
+    .day:nth-child(3){
+        margin-right: 23px;
+    }
+    .day:nth-child(4){
+        margin-right: 23px;
+    }
+    .day:nth-child(5){
+        margin-right: 20px;
+    }
+    .day:nth-child(6){
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width:924px){
+    #text{
+        margin-left: 10px;
+        
+    }
+    #calendar{
+        width:80%;
+        margin-left: 80px;
+    }
+    #photo{
+        width: 40%;
+    }
+    #date{
+        width: 60%;
+    }
+    #week{
+        letter-spacing: 16px;
+    }
+    .day{
+        
+        margin-bottom: 25px;
+    }
+    
+    
+}
+
+@media screen and (max-width:850px){
+    #calendar{
+        width:70%;
+        margin-left: 100px;
+    }
+        #time{
+        font-size: 20px;
+            padding-top: 30px;
+    }
+    #photo{
+        width: 40%;
+    }
+    #date{
+        width: 60%;
+    }
+    #week{
+        letter-spacing: 12px;
+    }
+    .day{
+        margin-right: 16px;
+        margin-bottom: 35px;
+    }
+}
+

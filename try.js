@@ -73,4 +73,17 @@ for(var i=y;i<=31;i=i+7){
 var curr_day=d1.getDate();
 var days=document.querySelector("#days");
 days.children[curr_day-1].style.color="white";
-days.children[curr_day-1].style.backgroundColor="black";
+days.children[curr_day-1].style.backgroundColor="aquamarine";
+    var events=new Array(31);
+console.log(events);
+//addevent
+function create_event(i){
+    document.querySelectorAll(".day")[i-1].classList.add("event");
+    if(events[i-1]!=null)
+        alert(events[i-1]);
+    else{
+        events[i-1]=prompt("Enter event name");
+        
+    }
+        
+}
