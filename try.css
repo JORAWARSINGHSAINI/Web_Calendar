@@ -1,0 +1,111 @@
+body{
+    background-color: azure;
+    font-family:serif;
+}
+#text{
+    box-sizing: border-box;
+    font-size: 40px;
+    margin-left: 600px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-family: cursive;
+
+    
+}
+#calendar{
+    background-color:aliceblue;
+    position: relative;
+     margin-left: 350px;
+        width: 800px;
+        height: 500px;
+        border: 1px solid black;
+      box-shadow: 8px 12px 19px #888888;
+}
+
+#time{
+
+    width: 50%;
+    height: 20%;
+    box-sizing: border-box;
+    padding-left: 14%;
+    padding-top: 3%;
+    font-size: 20px;
+        color:chocolate;
+    letter-spacing: 8px;
+}
+
+#date{
+    border: 1px solid grey;
+    width: 50%;
+    height: 80%;
+    font-size: 20px;
+    box-sizing: border-box;
+    letter-spacing: 17px;
+    padding-left: 26px;
+    padding-top: 15px;
+
+}
+#days{
+    letter-spacing: normal;
+    box-sizing: border-box;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+.day{
+    width: 26px;
+    height: 28px;
+    margin-right: 26px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    
+}
+.day:nth-child(1){
+    margin-right: 26px;
+}
+.day:nth-child(2){
+    margin-right: 26px;
+}
+.day:nth-child(3){
+    margin-right: 26px;
+}
+.day:nth-child(4){
+    margin-right: 26px;
+}
+.day:nth-child(5){
+    margin-right: 26px;
+}
+.day:nth-child(6){
+    margin-right: 26px;
+}
+.day:nth-child(7){
+    margin-right: 26px;
+}
+.day:nth-child(8){
+    margin-right: 26px;
+}
+.day:nth-child(9){
+    margin-right: 26px;
+}
+#red{
+    color: red;
+}
+.event{
+    color: white;
+    background-color: orange;
+}
+.event:hover{
+    cursor: pointer;
+}
+#photo{
+    width:50%;
+    height: 100%;
+    border: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(images.jpg);
+}
