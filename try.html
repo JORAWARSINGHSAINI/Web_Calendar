@@ -6,50 +6,56 @@
        
     </head>
     <body>
-        <div id="text">Calendar :</div>
-        <div id="calendar">
-            <div id="time">
+    <div id="dark"><button id="dark_button" onclick="dark_mode_event()">Dark Mode:</button></div>
+        <div id="text">Calendar :
+        </div>
+        <div class="microphone">
+            </div>
+        <div id="calendar" >
+            <div id="time" >
             
             </div>
             <div id="date">
               <div id="week">  <span id="red">S</span> M T W T F S
                   </div>
                 <div id="days">
-                    <div class="day" onclick="create_event(1)">1 </div>
-                    <div class="day" onclick="create_event(2)">2 </div>
-                    <div class="day" onclick="create_event(3)">3 </div>
-                    <div class="day" onclick="create_event(4)">4 </div>
-                    <div class="day" onclick="create_event(5)">5 </div>
-                    <div class="day" onclick="create_event(6)">6 </div>
-                    <div class="day" onclick="create_event(7)">7 </div>
-                    <div class="day" onclick="create_event(8)">8 </div>
-                    <div class="day" onclick="create_event(9)">9 </div>
-                    <div class="day" onclick="create_event(10)">10</div>
-                    <div class="day" onclick="create_event(11)">11</div>
-                    <div class="day" onclick="create_event(12)">12</div>
-                    <div class="day" onclick="create_event(13)">13</div>
-                    <div class="day" onclick="create_event(14)">14</div>
-                    <div class="day" onclick="create_event(15)">15</div>
-                    <div class="day" onclick="create_event(16)">16</div>
-                    <div class="day" onclick="create_event(17)">17</div>
-                    <div class="day" onclick="create_event(18)">18</div>
-                    <div class="day" onclick="create_event(19)">19</div>
-                    <div class="day" onclick="create_event(20)">20</div>
-                    <div class="day" onclick="create_event(21)">21</div>
-                    <div class="day" onclick="create_event(22)">22</div>
-                    <div class="day" onclick="create_event(23)">23</div>
-                    <div class="day" onclick="create_event(24)">24</div>
-                    <div class="day" onclick="create_event(25)">25</div>
-                    <div class="day" onclick="create_event(26)">26</div>
-                    <div class="day" onclick="create_event(27)">27</div>
-                    <div class="day" onclick="create_event(28)">28</div>
-                    <div class="day" onclick="create_event(29)">29</div>
-                    <div class="day" onclick="create_event(30)">30</div>
-                    <div class="day" onclick="create_event(31)">31</div>
+                    <div class="day" onclick="create_event(1,null)">1 </div>
+                    <div class="day" onclick="create_event(2,null)">2 </div>
+                    <div class="day" onclick="create_event(3,null)">3 </div>
+                    <div class="day" onclick="create_event(4,null)">4 </div>
+                    <div class="day" onclick="create_event(5,null)">5 </div>
+                    <div class="day" onclick="create_event(6,null)">6 </div>
+                    <div class="day" onclick="create_event(7,null)">7 </div>
+                    <div class="day" onclick="create_event(8,null)">8 </div>
+                    <div class="day" onclick="create_event(9,null)">9 </div>
+                    <div class="day" onclick="create_event(10,null)">10</div>
+                    <div class="day" onclick="create_event(11,null)">11</div>
+                    <div class="day" onclick="create_event(12,null)">12</div>
+                    <div class="day" onclick="create_event(13,null)">13</div>
+                    <div class="day" onclick="create_event(14,null)">14</div>
+                    <div class="day" onclick="create_event(15,null)">15</div>
+                    <div class="day" onclick="create_event(16,null)">16</div>
+                    <div class="day" onclick="create_event(17,null)">17</div>
+                    <div class="day" onclick="create_event(18,null)">18</div>
+                    <div class="day" onclick="create_event(19,null)">19</div>
+                    <div class="day" onclick="create_event(20,null)">20</div>
+                    <div class="day" onclick="create_event(21,null)">21</div>
+                    <div class="day" onclick="create_event(22,null)">22</div>
+                    <div class="day" onclick="create_event(23,null)">23</div>
+                    <div class="day" onclick="create_event(24,null)">24</div>
+                    <div class="day" onclick="create_event(25,null)">25</div>
+                    <div class="day" onclick="create_event(26,null)">26</div>
+                    <div class="day" onclick="create_event(27,null)">27</div>
+                    <div class="day" onclick="create_event(28,null)">28</div>
+                    <div class="day" onclick="create_event(29,null)">29</div>
+                    <div class="day" onclick="create_event(30,null)">30</div>
+                    <div class="day" onclick="create_event(31,null)">31</div>
                                     </div>
             </div>
             <div id="photo"></div>
         </div>
+        <button id="before">Before Month</button>
+        <button id="after">After Month</button>
          <script type="text/javascript" src="try.js"></script>
     </body>
 </html>

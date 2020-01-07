@@ -20,7 +20,11 @@ body{
         width: 800px;
         height: 500px;
         border: 1px solid black;
-      box-shadow: 8px 12px 19px #888888;
+        box-shadow: 5px 5px 10px #888888;
+
+}
+#calendar:hover{
+    box-shadow: 8px 12px 19px #888888;
 }
 
 #time{
@@ -36,7 +40,7 @@ body{
 }
 
 #date{
-    border: 1px solid grey;
+    
     width: 50%;
     height: 80%;
     font-size: 20px;
@@ -214,7 +218,24 @@ body{
         
         margin-bottom: 25px;
     }
-    
+     .day:nth-child(1){
+        margin-right: 22px;
+    }
+    .day:nth-child(2){
+        margin-right: 22px;
+    }
+    .day:nth-child(3){
+        margin-right: 23px;
+    }
+    .day:nth-child(4){
+        margin-right: 23px;
+    }
+    .day:nth-child(5){
+        margin-right: 20px;
+    }
+    .day:nth-child(6){
+        margin-right: 20px;
+    }
     
 }
 
@@ -238,7 +259,46 @@ body{
     }
     .day{
         margin-right: 16px;
-        margin-bottom: 35px;
+        margin-bottom: 30px;
     }
+}
+.microphone{
+    width:30px;
+    height: 40px;
+    position: absolute;
+    top: 85px;
+    left: 225px;
+    border-radius: 50%;
+    padding: 0;
+    background-size: cover;
+    background-color: black;
+    border: 3px solid skyblue;
+    background-image: url("https://www.pinclipart.com/picdir/middle/32-322562_open-google-microphone-icon-clipart.png");
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.record{
+    animation: microphone-animation 1.5s infinite;
+}
+@keyframes microphone-animation{
+    0%{
+        transform: scale(0.9);
+        
+    }
+    70%{
+        transform: scale(1.0);
+        box-shadow: 0 0 0 8px rgba(0,148,255,1);
+    }
+    100%{
+        transform: scale(0.9);
+        
+    }
+}
+#dark{
+    position: absolute;
+    right: 20px;
+    top: 10px;
 }
 
