@@ -1,5 +1,5 @@
 body{
-    background-color: azure;
+    background-color: wheat;
     font-family:serif;
 }
 #text{
@@ -49,6 +49,17 @@ body{
     padding-left: 26px;
     padding-top: 15px;
 
+}
+#complete_info{
+    width: 60%;
+    height: 80%;
+    font-size: 36px;
+    box-sizing: border-box;
+    margin-left: 30%;
+    padding-left: 26px;
+    padding-top: 15px;
+    font-weight: bold;
+    
 }
 #days{
     letter-spacing: normal;
