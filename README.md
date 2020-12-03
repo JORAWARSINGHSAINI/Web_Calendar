@@ -1,5 +1,11 @@
 # Web Calendar
-The Web Calendar Project aims to bring
+
+## Dark Mode Off:
+![](images/1.png)
+## Dark Mode On:
+![](images/4.png)
+
+The Web Calendar Project aims to bring the functionalities of a Physical Calendar onto web with some easy to click buttons and other functionalities not present physically.
 The tecnologies used are HTML,CSS And JavaScript.
 
 The project is live at: https://jorawarsinghsaini.github.io/simple_calendar/
