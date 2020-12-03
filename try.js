@@ -1,5 +1,12 @@
 var time = document.querySelector("#time");
-var image_arr=["https://images.unsplash.com/photo-1420593248178-d88870618ca0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80","https://cdn.sharechat.com/beautifulnature_882bb8d0-a2c6-4bf1-9c4e-e9e0fec6fa8e-34f3619d-9efe-42ee-9f08-c9a780fb7451_cmprsd_40.jpg","https://cdnaws.sharechat.com/1534585837859_284_compressed_40.jpg","https://cdn-ak.sharechat.com/%EF%B8%8Fnaturebeauty%EF%B8%8F_84857dea-ce01-4094-a326-e7f6514c152e-70d6f1c2-c3e4-41ef-a628-5ae1d72c33d7_cmprsd_40.jpg","https://cdnaws.sharechat.com/73316340-7264-491f-8558-07365de90fab-28ea6ae2-adbe-4731-82e4-e16bdf404953_compressed_40.jpg"];
+var image_arr=[
+"https://images.pexels.com/photos/358238/pexels-photo-358238.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+"https://image.freepik.com/free-vector/sunset-scenery-with-sea-palm-silhouette_116220-28.jpg",
+"https://i.pinimg.com/originals/e8/c7/c4/e8c7c4d4e14a9e3b21faf3d7b37c5b03.jpg",
+"https://thumbs.dreamstime.com/b/beautiful-golden-autumn-scenery-trees-golden-leaves-sunshine-scotland-united-kingdom-beautiful-golden-autumn-124278811.jpg",
+"https://3.bp.blogspot.com/-czZLqG2KVlQ/TozQMC_YotI/AAAAAAAAAfk/nTfRLpVmb3g/s1600/nature+scenery+wallpaper-1.jpg",
+"https://i.pinimg.com/originals/0d/8e/02/0d8e0215230f829053d078247b5d5bec.jpg",
+"https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20Julietphotography,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1535456857/udrc9x3wkoi0pgalbwwz.jpg"];
 var events = new Array();
 var date,month,year;
 
@@ -66,8 +73,9 @@ function set_image()
 {
     //set image from array
     var image=document.querySelector("#photo");
-    var value=String(image_arr[Math.floor(4*Math.random())]);
+    var value=String(image_arr[Math.floor(7*Math.random())]);
     image.style.backgroundImage="url("+value+")";
+
 }
 function set_sunday_red()
 {
@@ -127,7 +135,11 @@ function create_calendar(){
     x.style.marginLeft=margin;
 
     var complete_info=document.querySelector("#complete_info");
-    complete_info.innerHTML = "Month ->"+(month+1)+"  Year -> "+year;
+    var c1=document.querySelector("#c1");
+    var c2=document.querySelector("#c2");
+    help_month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    c1.innerHTML = help_month[month];
+    c2.innerHTML = (year);
 
 // else required as for next month they should be vissible
 if(month === 1)
@@ -155,16 +167,17 @@ else{
     document.querySelectorAll(".day")[30].style.visibility="visible";
 }
 
-//current day black with white text;
-var d4=new Date();
-var days=document.querySelector("#days");
-    if(month === d4.getMonth()){
-        days.children[date-1].style.color="white";
-        days.children[date-1].style.backgroundColor="aquamarine";
-    }
+
     set_image();
     set_sunday_red();
     set_events_color();
+//current day black with white text;
+var d4=new Date();
+var days=document.querySelector("#days");
+    if(month === d4.getMonth() && year === d4.getFullYear()){
+        days.children[date-1].style.color="green";
+        days.children[date-1].style.backgroundColor="aquamarine";
+    }
 }
   //addevent
 function create_event(tdate,type_event){
@@ -264,13 +277,13 @@ microphone.addEventListener("click",function(){
 function dark_mode_event(){
     var body=document.querySelector("body");
    var x=body.style.backgroundColor;
-    if(x==="azure" || x===""){    document.querySelector("#text").style.color="white";
-        body.style.backgroundColor="#1a1a1a"
+    if(x==="wheat" || x===""){    document.querySelector("#text").style.color="white";
+        body.style.backgroundColor="black"
         document.querySelector("#complete_info").style.color="white";
                    }
     else{    
         document.querySelector("#text").style.color="black";
-        body.style.backgroundColor="azure";
+        body.style.backgroundColor="wheat";
         document.querySelector("#complete_info").style.color="black";
          }
 }

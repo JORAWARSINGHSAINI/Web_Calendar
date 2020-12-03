@@ -4,11 +4,10 @@ body{
 }
 #text{
     box-sizing: border-box;
-    font-size: 40px;
+    font-size: 50px;
     margin-left: 600px;
-    margin-top: 80px;
+    margin-top: 70px;
     margin-bottom: 30px;
-    text-decoration: underline;
     font-family: cursive;
 
     
@@ -143,7 +142,7 @@ body{
         margin-left: 10px;
     }
     #calendar{
-        widht:90%;
+        width:90%;
         margin-left: 120px;
     }
     #time{
@@ -169,7 +168,7 @@ body{
         margin-left: 10px;
     }
     #calendar{
-        widht:60%;
+        width:60%;
         margin-left: 70px;
     }
         #time{
@@ -277,13 +276,12 @@ body{
     width:30px;
     height: 40px;
     position: absolute;
-    top: 85px;
-    left: 225px;
-    border-radius: 50%;
+    top: 100px;
+    left: 820px;
+    border-radius: 40%;
     padding: 0;
     background-size: cover;
     background-color: black;
-    border: 3px solid skyblue;
     background-image: url("https://www.pinclipart.com/picdir/middle/32-322562_open-google-microphone-icon-clipart.png");
     background-size: 100% 100%;
     margin: 0;
@@ -307,9 +305,72 @@ body{
         
     }
 }
-#dark{
+#dark_button{
     position: absolute;
-    right: 20px;
-    top: 10px;
+    right: 80px;
+    top: 20px;
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    font-family: cursive;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+}
+#dark_button:hover{
+    color: white;
+    background-color: rgb(15, 15, 15);
+    border: 1px solid yellow;
 }
 
+#before{
+    position: absolute;
+    left: 230px;
+    top: 31%;
+    width: 70px;
+    height: 500px;
+    opacity: 0.5;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+}
+#after{
+    position: absolute;
+    right: 330px;
+    top: 31%;
+    width: 70px;
+    opacity: 0.5;
+    height: 500px;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+}
+#before:hover{
+    
+    opacity: 0.8;
+    color:white;
+    font-size: 30px;
+    background-color: rgb(203, 211, 93);
+}
+#after:hover{
+    opacity: 0.8;
+    color:white;
+    font-size: 30px;
+    background-color:  rgb(203, 211, 93);
+}
+#c1{
+
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 24px;
+    margin-right: 150px;
+    background-color: tomato;
+    border:1px solid wheat;
+    font-family: cursive;
+    
+}
+#c2{
+    padding: 15px;
+    font-size: 24px;
+    box-sizing: border-box;
+    background-color: tomato;
+    border:1px solid wheat;
+    font-family: cursive;
+}

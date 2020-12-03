@@ -6,20 +6,23 @@
        
     </head>
     <body>
-    <div id="dark"><button id="dark_button" onclick="dark_mode_event()">Dark Mode:</button></div>
-        <div id="text">Calendar :
+    <div id="dark"><button id="dark_button" onclick="dark_mode_event()">Dark Mode</button></div>
+        <div id="text">Calendar 
         </div>
         <div id="complete_info">
+            <span id="c1"></span>
+            <span id="c2"></span>
         </div>
         <div class="microphone">
             </div>
-        <div id="calendar" >
+            <button id="before"><b><</b></button>
+            <div id="calendar" >
             <div id="time" >
             
             </div>
             <div id="date">
               <div id="week">  <span id="red">S</span> M T W T F S
-                  </div>
+              </div>
                 <div id="days">
                     <div class="day" onclick="create_event(1,null)">1 </div>
                     <div class="day" onclick="create_event(2,null)">2 </div>
@@ -56,8 +59,8 @@
             </div>
             <div id="photo"></div>
         </div>
-        <button id="before">Before Month</button>
-        <button id="after">After Month</button>
+        
+        <button id="after"><b>></b></button>
          <script type="text/javascript" src="try.js"></script>
     </body>
 </html>
